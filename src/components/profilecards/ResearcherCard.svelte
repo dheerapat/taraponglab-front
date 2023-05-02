@@ -12,7 +12,7 @@
     <h3>{name}</h3>
     <p>{detail}</p>
     <p>{study}</p>
-    <p>{email}</p>
+    <a href="mailto:{email}">{email}</a>
 </div>
 
 <style>
