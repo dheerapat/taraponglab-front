@@ -22,24 +22,6 @@
         study="Pharm.D."
         email="dheerapat.t@outlook.com"
         />
-
-        <!-- <Card
-        profileurl="/img/02.jpg"
-        profilealt="Dheerapat Tookkane"
-        name="Dheerapat Tookkane"
-        detail="Developer"
-        study="Pharm.D."
-        email="dheerapat.t@outlook.com"
-        />
-
-        <Card
-        profileurl="/img/02.jpg"
-        profilealt="Dheerapat Tookkane"
-        name="Dheerapat Tookkane"
-        detail="Developer"
-        study="Pharm.D."
-        email="dheerapat.t@outlook.com"
-        /> -->
     </div>
 </section>
 

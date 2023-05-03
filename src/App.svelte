@@ -4,10 +4,12 @@
 	import Hero from "./components/Hero.svelte"
 	import About from "./components/About.svelte"
 	import Researcher from "./components/Researcher.svelte";
+    import Publications from "./components/Publications.svelte";
 </script>
 
 <Nav />
 <Hero />
 <About />
 <Researcher />
+<Publications />
 <Footer />
