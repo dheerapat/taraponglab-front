@@ -13,6 +13,8 @@
         background-color: #143F6B;
         padding: 10px;
         align-items: center;
+        position: fixed;
+        width: 100%;
     }
     
     nav a {
