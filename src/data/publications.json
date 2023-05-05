@@ -28,5 +28,48 @@
 		"year": 2022,
 		"title": "Effect of Germination and Illumination on Melatonin and Its Metabolites, Phenolic Content, and Antioxidant Activity in Mung Bean Sprouts.",
 		"journal": "Plants. 2022 Nov 6;11(21):2990."
+	},
+	{
+		"authors": "Juengsanguanpornsuk W, Kitisripanya T, Boonsnongcheep P, Yusakul G, Srisongkram T, Sakamoto S, Putalun W.",
+		"year": 2022,
+		"title": "Improvement in the binding specificity of anti-isomiroestrol antibodies by expression as fragments under oxidizing conditions inside the SHuffle T7 E. coli cytoplasm.",
+		"journal": "Bioscience, Biotechnology, and Biochemistry. 2022 Oct;86(10):1368-77."
+	},
+	{
+		"authors": "Srisongkram T, Bahrami K, Järvinen J, Timonen J, Rautio J, Weerapreeyakul N.",
+		"year": 2022,
+		"title": "Development of Sesamol Carbamate-L-Phenylalanine Prodrug Targeting L-Type Amino Acid Transporter1 (LAT1) as a Potential Antiproliferative Agent against Melanoma.",
+		"journal": "International Journal of Molecular Sciences. 2022 Jul 30;23(15):8446."
+	},
+	{
+		"authors": "Srisongkram T, Weerapreeyakul N.",
+		"year": 2022,
+		"title": "Route of intracellular uptake and cytotoxicity of sesamol, sesamin, and sesamolin in human melanoma SK-MEL-2 cells.",
+		"journal": "Biomedicine & Pharmacotherapy. 2022 Feb 1; 146:112528."
+	},
+	{
+		"authors": "Srisongkram T, Waithong S, Thitimetharoch T, Weerapreeyakul N.",
+		"year": 2022,
+		"title": "Machine learning and in vitro chemical screening of potential α-amylase and α-glucosidase inhibitors from Thai indigenous plants.",
+		"journal": "Nutrients. 2022 Jan 9;14(2):267."
+	},
+	{
+		"authors": "Srisongkram T, Weerapreeyakul N, Thumanu K.",
+		"year": 2020,
+		"title": "Evaluation of Melanoma (SK-MEL-2) Cell Growth between Three-Dimensional (3D) and Two-Dimensional (2D) Cell Cultures with Fourier Transform Infrared (FTIR) Microspectroscopy.",
+		"journal": "International Journal of Molecular Sciences. 2020; 21(11):4141."
+	},
+	{
+		"authors": "Srisongkram T, Weerapreeyakul N, Kärkkäinen J, Rautio J.",
+		"year": 2019,
+		"title": "Role of L-Type Amino Acid Transporter 1 (LAT1) for the Selective Cytotoxicity of Sesamol in Human Melanoma Cells.",
+		"journal": "Molecules. 2019; 24(21):3869."
+	},
+	{
+		"authors": "Srisongkram T, Weerapreeyakul N.",
+		"year": 2019,
+		"title": "Validation of Cell-Based Assay for Quantification of Sesamol Uptake and Its Application for Measuring Target Exposure.",
+		"journal": "Molecules. 2019; 24(19):3522."
 	}
+
 ]
