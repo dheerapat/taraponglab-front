@@ -5,6 +5,7 @@
 	import About from "./components/About.svelte"
 	import Researcher from "./components/Researcher.svelte";
     import Publications from "./components/Publications.svelte";
+    import Form from "./components/Form.svelte"
 </script>
 
 <Nav />
@@ -12,4 +13,5 @@
 <About />
 <Researcher />
 <Publications />
+<Form />
 <Footer />
