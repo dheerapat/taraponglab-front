@@ -14,6 +14,7 @@
         padding: 10px;
         align-items: center;
         position: fixed;
+        top: 0;
         width: 100%;
     }
     

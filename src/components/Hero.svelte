@@ -5,7 +5,7 @@
     <div>
         <h1>QSARLab</h1>
         <p>Introducing the QSAR Toolbox: Unleash the Power of Advance Machine Learning in Predictive Drug Bioactivity Modeling</p>
-        <a href="/">Try Our StackBRAF Model</a>
+        <a href="#/model" on:click|preventDefault={() => window.location.hash = "model"}>Try Our StackBRAF Model</a>
     </div>
 </section>
 

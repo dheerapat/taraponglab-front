@@ -40,9 +40,10 @@
 <style>
     section {
         background-color: white;
-        /* text-align: center; */
         font-size: 30px;
-        padding: 30px;
+        padding: 50px;
+        margin-top: 50px;
+        margin-bottom: 30px;
     }
     h1, form {
         text-align: center;
