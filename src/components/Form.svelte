@@ -14,8 +14,10 @@
             body: JSON.stringify(data)
         })
 
+        const resData = await res.json()
+        
         if (res.ok) {
-            alert(res)
+            alert(resData)
         } else {
             alert("API call failed")
         }
@@ -26,9 +28,24 @@
     <h1>StackBRAF Model</h1>
     <div>
         <form on:submit|preventDefault={prediction}>
-            <input type="text" bind:value={name}>
-            <input type="text" bind:value={smiles}>
-            <button type="submit">Submit</button>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" bind:value={name}><br>
+            <label for="smiles">SMILES</label>
+            <input id="smiles" name="smiles" type="text" bind:value={smiles}><br>
+            <button type="submit" width="20%">Predict</button>
         </form>
     </div>
 </section>
+
+<style>
+    section {
+        background-color: white;
+        /* text-align: center; */
+        font-size: 30px;
+        padding: 30px;
+    }
+    h1, form {
+        text-align: center;
+    }
+    
+</style>
