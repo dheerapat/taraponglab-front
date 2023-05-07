@@ -6,7 +6,7 @@
 	import Researcher from "./components/Researcher.svelte";
     import Publications from "./components/Publications.svelte";
     import Form from "./components/Form.svelte"
-    import { onMount } from "svelte"
+    // import { onMount } from "svelte"
 
 	let route = window.location.hash.slice(1)
 
@@ -15,7 +15,7 @@
 		console.log(route)
 	}
 
-	onMount(handlehash)
+	// onMount(handlehash)
 </script>
 
 <svelte:window on:hashchange={handlehash} />

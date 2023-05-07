@@ -15,9 +15,11 @@
         })
 
         const resData = await res.json()
+        const returnObj = JSON.parse(resData)
         
         if (res.ok) {
-            alert(resData)
+            alert(resdata)
+            console.log(returnObj)
         } else {
             alert("API call failed")
         }
