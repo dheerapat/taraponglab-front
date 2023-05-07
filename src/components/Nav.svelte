@@ -1,8 +1,8 @@
 <nav>
     <a href="/">TarapongLab</a>
-    <a href="/">About Us</a>
-    <a href="/">Researchers</a>
-    <a href="/">Publications</a>
+    <a href="#about">About Us</a>
+    <a href="#researchers">Researchers</a>
+    <a href="#publications">Publications</a>
     <a class="box" href="/">Models</a>
 </nav>
 

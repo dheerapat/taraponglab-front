@@ -3,7 +3,7 @@
     import PublicationCard from "./profilecards/PublicationCard.svelte"
 </script>
 
-<section>
+<section id="publications">
     <h1>Publications</h1>
     <div class="wrapper">
         {#each publicationDatas as data }

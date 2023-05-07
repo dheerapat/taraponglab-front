@@ -1,4 +1,4 @@
-<section class="wrapper">
+<section class="wrapper" id="about">
     <div>
         <h1>About Us</h1>
         <p>We are pharmaceutical researcher and developer located in Khon Kaen, Thailand</p>

@@ -2,7 +2,7 @@
     import Card from "./profilecards/ResearcherCard.svelte"
 </script>
 
-<section>
+<section id="researchers">
     <h1>Researchers</h1>
     <div class="wrapper">
         <Card
