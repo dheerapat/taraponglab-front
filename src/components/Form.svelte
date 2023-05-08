@@ -18,7 +18,7 @@
         const returnObj = JSON.parse(resData)
         
         if (res.ok) {
-            alert(resdata)
+            alert(resData)
             console.log(returnObj)
         } else {
             alert("API call failed")
