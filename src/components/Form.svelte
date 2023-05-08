@@ -3,6 +3,7 @@
     let smiles
 
     async function prediction() {
+        document.body.style.cursor = "wait"
         const data = {name, smiles}
 
         const res = await fetch("http://localhost:8000/stackbraf",
@@ -13,6 +14,8 @@
             },
             body: JSON.stringify(data)
         })
+
+        document.body.style.cursor = "default"
 
         const resData = await res.json()
         const returnObj = JSON.parse(resData)
