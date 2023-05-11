@@ -3,7 +3,6 @@
     let smiles
 
     async function prediction() {
-        document.body.style.cursor = "wait"
         const data = {name, smiles}
 
         const res = await fetch("http://localhost:8000/stackbraf",
@@ -15,16 +14,14 @@
             body: JSON.stringify(data)
         })
 
-        document.body.style.cursor = "default"
-
         const resData = await res.json()
-        const returnObj = JSON.parse(resData)
+        const processID = resData.process_id
         
         if (res.ok) {
-            alert(resData)
-            console.log(returnObj)
+            console.log(processID)
+            window.location.hash = `success#${processID}#${name}`
         } else {
-            alert("API call failed")
+            alert("API Call Failed: Please report to admin")
         }
     }
 </script>

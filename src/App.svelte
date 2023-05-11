@@ -6,16 +6,23 @@
 	import Researcher from "./components/Researcher.svelte";
     import Publications from "./components/Publications.svelte";
     import Form from "./components/Form.svelte"
-    // import { onMount } from "svelte"
+    import Result from "./components/Result.svelte";
 
-	let route = window.location.hash.slice(1)
-
-	function handlehash() {
-		route = window.location.hash.slice(1)
-		console.log(route)
+	function getDataFromHash() {
+		const hash = window.location.hash.slice(1)
+		const [route, data, name] = hash.split('#')
+		return { route, data: data || null }
 	}
 
-	// onMount(handlehash)
+	let { route, data } = getDataFromHash()
+
+	function handlehash() {
+		const { route: newRoute, data: newData } = getDataFromHash()
+    	route = newRoute
+    	data = newData
+	}
+
+	handlehash()
 </script>
 
 <svelte:window on:hashchange={handlehash} />
@@ -23,6 +30,10 @@
 {#if route == "model"}
 	<Nav />
 	<Form />
+	<Footer />
+{:else if route =="success"}
+	<Nav />
+	<Result process_id = {data} />
 	<Footer />
 {:else}
 	<Nav />
