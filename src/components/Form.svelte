@@ -5,9 +5,11 @@
     async function prediction() {
         const data = {name, smiles}
 
-        const res = await fetch("http://localhost:8000/stackbraf",
+        const res = await fetch("/stackbraf/",
         {
             method: "POST",
+            mode: "same-origin",
+            credentials: "same-origin",
             headers: {
                 "Content-type": "application/json"
             },

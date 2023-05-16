@@ -9,7 +9,7 @@
     let similarity
 
     async function get_result() {
-        const res = await fetch(`http://localhost:8000/stackbraf/${process_id}`)
+        const res = await fetch(`/stackbraf/${process_id}`)
         const data = await res.json()
 
         if (data.status == "complete") {
