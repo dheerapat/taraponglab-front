@@ -4,7 +4,9 @@
 	import Hero from "./components/Hero.svelte"
 	import About from "./components/About.svelte"
 	import Researcher from "./components/Researcher.svelte";
+	import Funding from "./components/Funding.svelte";
     import Publications from "./components/Publications.svelte";
+	import Contact from "./components/Contact.svelte";
     import Form from "./components/Form.svelte"
     import Result from "./components/Result.svelte";
 
@@ -40,6 +42,8 @@
 	<Hero />
 	<About />
 	<Researcher />
+	<Funding />
 	<Publications />
+	<Contact />
 	<Footer bg="white" />
 {/if}

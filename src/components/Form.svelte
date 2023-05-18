@@ -5,9 +5,11 @@
     async function prediction() {
         const data = {name, smiles}
 
-        const res = await fetch("http://localhost:8000/stackbraf",
+        const res = await fetch("/stackbraf/",
         {
             method: "POST",
+            mode: "same-origin",
+            credentials: "same-origin",
             headers: {
                 "Content-type": "application/json"
             },
@@ -27,7 +29,8 @@
 </script>
 
 <section>
-    <h1>StackBRAF Model</h1>
+    <h1>StackBRAF: a large-scale stacking ensemble learning for BRAF affinity prediction</h1>
+    <h4>You can enter your compound name and SMILES to predict BRAF affinity concentration (pIC50)</h4>
     <div>
         <form on:submit|preventDefault={prediction}>
             <label for="name">Name</label>
@@ -44,11 +47,14 @@
         background-color: white;
         font-size: 30px;
         padding: 50px;
-        margin-top: 50px;
-        margin-bottom: 30px;
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
-    h1, form {
+    h1,h4, form {
         text-align: center;
+    }
+    form {
+        margin-top: 100px;
     }
     
 </style>

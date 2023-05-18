@@ -11,7 +11,6 @@
         name="Tarapong Srisongkram"
         detail="Principal Investigator"
         study="Ph.D."
-        email="tarasri@kku.ac.th"
         />
     
         <Card
@@ -20,8 +19,8 @@
         name="Dheerapat Tookkane"
         detail="Developer"
         study="Pharm.D."
-        email="dheerapat.t@outlook.com"
         />
+        
     </div>
 </section>
 
@@ -33,7 +32,7 @@
 
     .wrapper {
         display: flex;
-        /* grid-template-columns:  1fr 1fr 1fr 1fr; */
+        /*grid-template-columns:  1fr 1fr 1fr 1fr;*/
         padding: 50px;
         justify-content: center;
         align-items: center;

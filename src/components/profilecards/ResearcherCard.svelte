@@ -4,7 +4,6 @@
     export let name
     export let detail
     export let study
-    export let email
 </script>
 
 <div class="card">
@@ -12,7 +11,7 @@
     <h3>{name}</h3>
     <p>{detail}</p>
     <p>{study}</p>
-    <a href="mailto:{email}">{email}</a>
+
 </div>
 
 <style>
@@ -29,8 +28,8 @@
 
     img {
         border-radius: 20px;
-        width: 300px;
-        height: 400px;
+        width: 200px;
+        height: 300px;
         object-fit: cover;
         object-position: top;
     }

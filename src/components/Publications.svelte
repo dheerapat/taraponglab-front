@@ -19,7 +19,7 @@
 
 <style>
     section {
-        background-color: #f5f5f5;
+        background: radial-gradient(at 50% 40%, rgb(255, 255, 255), transparent 80%) repeat scroll 0% 0%, radial-gradient(at 50% -47%, #bbdef9, transparent 80%) repeat scroll 0% 0%, radial-gradient(at 100% 0%, #bbdef9 0px, transparent 32%) repeat scroll 0% 0%, radial-gradient(at 100% 98%, rgb(255, 241, 235), transparent) repeat scroll 0% 0%, rgba(0, 0, 0, 0) radial-gradient(at 0px 97%, rgb(181, 233, 247), white) repeat scroll 0% 0%;
         text-align: center;
         font-size: 30px;
         padding: 30px;

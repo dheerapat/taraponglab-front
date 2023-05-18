@@ -9,7 +9,7 @@
     let similarity
 
     async function get_result() {
-        const res = await fetch(`http://localhost:8000/stackbraf/${process_id}`)
+        const res = await fetch(`/stackbraf/${process_id}`)
         const data = await res.json()
 
         if (data.status == "complete") {
@@ -19,7 +19,7 @@
             let Key = jsonData[key]
 
             pIC50 = Key.pIC50.toPrecision(3)
-            similarity = Key.Similarity_nonoutliers.toPrecision(2)
+            similarity = Key.Similarity_nonoutliers.toPrecision(3)
         } else if (data.status == "processing") {
             setTimeout(get_result,2000)
         }
@@ -36,7 +36,7 @@
         <h1>Result</h1>
         <h3>Ligand: {key}</h3>
         <h3>pIC50: {pIC50}</h3>
-        <h3>Similarity Non-Outliers: {similarity}</h3>
+        <h3>Similarity: {similarity * 100} %</h3>
     </div>
     {:else}
     <div>
