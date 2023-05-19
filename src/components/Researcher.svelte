@@ -69,7 +69,7 @@
         justify-content: center;
         align-items: center;
     }
-    @media (max-width: 1200px) {
+    @media (max-width: 1366px) {
         .wrapper {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
