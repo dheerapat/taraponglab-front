@@ -12,13 +12,45 @@
         detail="Principal Investigator"
         study="Ph.D."
         />
-    
+
         <Card
         profileurl="/img/02.jpg"
         profilealt="Dheerapat Tookkane"
         name="Dheerapat Tookkane"
         detail="Developer"
         study="Pharm.D."
+        />
+
+        <Card
+        profileurl="/img/06.jpg"
+        profilealt="Natthida Weerapreeyakul"
+        name="Natthida Weerapreeyakul"
+        detail="Mentor"
+        study="Ph.D."
+        />
+
+        <Card
+        profileurl="/img/05.jpg"
+        profilealt="Nur Fadhilah Syahid"
+        name="Nur Fadhilah Syahid"
+        detail="Researcher"
+        study="Master student"
+        />
+
+        <Card
+        profileurl="/img/03.jpg"
+        profilealt="Nathida Sawasnopparat"
+        name="Nathida Sawasnopparat"
+        detail="Intern"
+        study="Pharm.D. student"
+        />
+    
+        <Card
+        profileurl="/img/04.jpg"
+        profilealt="Patcharapa Khamtang"
+        name="Patcharapa Khamtang"
+        detail="Intern"
+        study="Pharm.D. student"
         />
         
     </div>
@@ -33,7 +65,7 @@
     .wrapper {
         display: flex;
         /*grid-template-columns:  1fr 1fr 1fr 1fr;*/
-        padding: 50px;
+        padding: 20px;
         justify-content: center;
         align-items: center;
     }

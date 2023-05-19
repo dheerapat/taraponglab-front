@@ -16,10 +16,10 @@
 
 <style>
     .card {
-        border-style: dashed;
+        /* border-style: dashed;
         border-color: black;
-        border-width: 2px;
-        margin: 20px;
+        border-width: 2px; */
+        margin: 5px;
         text-align: center;
         padding: 15px 20px;
         border-radius: 20px;

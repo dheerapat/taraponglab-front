@@ -7,7 +7,6 @@
 <div class="card">
     <img src="{profileurl}" alt="{profilealt}" width="75%">
     <h3>{name}</h3>
-    <p>{detail}</p>
 
 </div>
 

@@ -9,20 +9,17 @@
         <Card
         profileurl="/img/NRCT.png"
         profilealt="National Research Council of Thailand"
-        name="Fundamental Fund"
-        detail="National Research Council of Thailand"
+        name="National Research Council of Thailand"
         />
         <Card
         profileurl="/img/MHESRI.png"
         profilealt="Ministry of Higher Education, Science, Research and Innovation"
-        name="Research Grant for New Scholar"
-        detail="Ministry of Higher Education, Science, Research and Innovation"
+        name="Ministry of Higher Education, Science, Research and Innovation"
         />
         <Card
         profileurl="/img/kku.png"
         profilealt="Khon Kaen University"
-        name="New Researcher Grant"
-        detail="Khon Kaen University"
+        name="Khon Kaen University"
         />
     </div>
 </section>
@@ -35,8 +32,8 @@
     }
 
     .wrapper {
-        display: flex;
-        grid-template-columns:  1fr 1fr 1fr 1fr;
+        display: grid;
+        grid-template-columns:  1fr 1fr 1fr;
         padding: 50px;
         justify-content: center;
         align-items: center;
