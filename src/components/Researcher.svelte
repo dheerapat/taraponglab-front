@@ -63,10 +63,16 @@
     }
 
     .wrapper {
-        display: flex;
-        /*grid-template-columns:  1fr 1fr 1fr 1fr;*/
+        display: grid;
+        grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr;
         padding: 20px;
         justify-content: center;
         align-items: center;
+    }
+    @media (max-width: 1200px) {
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
 </style>
