@@ -52,6 +52,22 @@
         detail="Intern"
         study="Pharm.D. student"
         />
+
+        <Card
+        profileurl="/img/07.jpg"
+        profilealt="Thanawat Piyasawetikul"
+        name="Thanawat Piyasawetikul"
+        detail="Intern"
+        study="Pharm.D. student"
+        />
+
+        <Card
+        profileurl="/img/08.jpg"
+        profilealt="Pannaphat Thirawatthanasak"
+        name="Pannaphat Thirawatthanasak"
+        detail="Intern"
+        study="Pharm.D. student"
+        />
         
     </div>
 </section>
@@ -63,16 +79,16 @@
     }
 
     .wrapper {
-        display: grid;
-        grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr;
+        display: flex;
+        flex-wrap: wrap;
+        /* grid-template-columns:  1fr 1fr 1fr 1fr 1fr; */
         padding: 20px;
         justify-content: center;
         align-items: center;
     }
-    @media (max-width: 1366px) {
+    /* @media (max-width: 1366px) {
         .wrapper {
-            display: grid;
             grid-template-columns: 1fr 1fr 1fr;
         }
-    }
+    } */
 </style>
