@@ -5,6 +5,11 @@
 
 <section id="publications">
     <h1>Publications</h1>
+    <div class="pub">
+        <a href="https://scholar.google.com/citations?user=1-XwteMAAAAJ&hl=en&fbclid=IwAR0RY1TGIqzMglcu_b7VUJlpr9uTEJ3I-Mcp0jnzazFlbsrGbCjmp0x0qXg">Google Scholar</a>
+        <a href="https://orcid.org/0000-0001-8512-5379?fbclid=IwAR0SFf85_RdmRWTPC5whUmw-5S4aKQ5pFIIBCtPn2PgKOw214KZhtGDtIV4">ORCID</a>
+        <a href="https://www.scopus.com/authid/detail.uri?origin=resultslist&authorId=57211125114&zone=&fbclid=IwAR2HLYhTJZKG3sFUA7iZ3BlsVK__tC8OFfESXZOmtZfxM5T89GQTwIYbO-o">Scopus</a>
+    </div>
     <div class="wrapper">
         {#each publicationDatas as data }
         <PublicationCard
@@ -25,10 +30,35 @@
         padding: 30px;
     }
 
+    .pub {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* p {
+        display: inline;
+    } */
+
     .wrapper {
         display: grid;
         grid-template-columns:  1fr 1fr;
         padding: 50px;
         justify-content: center;
+    }
+
+    @media (max-width: 1366px) {
+        .wrapper {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 810px) {
+        .pub {
+            grid-template-columns: 1fr;
+        }
+
+        .wrapper {
+            padding: 50px 0;
+        }
     }
 </style>

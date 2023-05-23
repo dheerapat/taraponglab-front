@@ -84,7 +84,7 @@
         /* grid-template-columns:  1fr 1fr 1fr 1fr 1fr; */
         padding: 20px;
         justify-content: center;
-        align-items: center;
+        /* align-items: center; */
     }
     /* @media (max-width: 1366px) {
         .wrapper {

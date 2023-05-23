@@ -24,7 +24,14 @@
         border-color: black;
         border-width: 2px;
     }
+
     div > * {
         margin: 10px;
+    }
+
+    @media (max-width: 810px) {
+        div {
+            font-size: small;
+        }
     }
 </style>

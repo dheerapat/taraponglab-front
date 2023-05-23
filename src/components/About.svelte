@@ -34,4 +34,26 @@
     img {
         border-radius: 20px;
     }
+
+    @media (max-width: 1366px) {
+        .wrapper {
+            flex-wrap: wrap;
+        }
+
+        .wrapper div {
+            width: 90%;
+        }
+    }
+
+    @media (max-width: 810px) {
+        .wrapper div {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .wrapper div {
+            font-size: 15px;
+        }
+    }
 </style>

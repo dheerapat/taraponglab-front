@@ -38,4 +38,10 @@
         justify-content: center;
         align-items: center;
     }
+
+    @media (max-width: 1366px) {
+        .wrapper {
+            grid-template-columns: 1fr;
+        }
+    }
 </style>
