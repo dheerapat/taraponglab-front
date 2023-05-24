@@ -55,8 +55,8 @@
 
         <Card
         profileurl="/img/07.jpg"
-        profilealt="Thanawat Piyasawetikul"
-        name="Thanawat Piyasawetikul"
+        profilealt="Thanawat Piyasawetkul"
+        name="Thanawat Piyasawetkul"
         detail="Intern"
         study="Pharm.D. student"
         />
