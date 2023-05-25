@@ -39,7 +39,7 @@
         padding: 10px;
     }
 
-    @media (max-width: 1366px) {
+    @media (max-width: 1200px) {
         .wrapper {
             flex-wrap: wrap-reverse;
         }

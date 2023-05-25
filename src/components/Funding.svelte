@@ -39,7 +39,7 @@
         align-items: center;
     }
 
-    @media (max-width: 1366px) {
+    @media (max-width: 1200px) {
         .wrapper {
             grid-template-columns: 1fr;
         }
