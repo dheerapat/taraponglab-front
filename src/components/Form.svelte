@@ -56,5 +56,12 @@
     form {
         margin-top: 100px;
     }
+
+    @media (max-width: 1200px) {
+        section {
+            font-size: medium;
+            margin-top: 25px;
+        }
+    }
     
 </style>
