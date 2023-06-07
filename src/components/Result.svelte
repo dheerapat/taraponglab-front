@@ -38,7 +38,8 @@
         <h3>pIC50: {pIC50}</h3>
         <h3>Similarity: {similarity * 100} %</h3>
         <br>
-        <h3>If you think this service is helpful please cite: <em>Syahid, N. F., Weerapreeyakul, N., & Srisongkram, T. (2023). StackBRAF: A Large-Scale Stacking Ensemble Learning for BRAF Affinity Prediction. ACS Omega.</em></h3>
+        <h3>If you think this service is helpful please cite: </h3>
+        <em>Syahid, N. F., Weerapreeyakul, N., & Srisongkram, T. (2023). StackBRAF: A Large-Scale Stacking Ensemble Learning for BRAF Affinity Prediction. ACS Omega.</em>
     </div>
     {:else}
     <div>
@@ -65,9 +66,10 @@
     }
 
     @media (max-width: 1200px) {
-        section {
+        .wrapper div {
             font-size: medium;
             margin-top: 25px;
+            padding: 0;
         }
     }
 </style>
