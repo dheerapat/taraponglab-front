@@ -39,7 +39,9 @@
         <h3>Similarity: {similarity * 100} %</h3>
         <br>
         <h3>If you think this service is helpful please cite: </h3>
-        <em>Syahid, N. F., Weerapreeyakul, N., & Srisongkram, T. (2023). StackBRAF: A Large-Scale Stacking Ensemble Learning for BRAF Affinity Prediction. ACS Omega.</em>
+        <a href="https://pubs.acs.org/doi/10.1021/acsomega.3c01641">
+            <em>Syahid, N. F., Weerapreeyakul, N., & Srisongkram, T. (2023). StackBRAF: A Large-Scale Stacking Ensemble Learning for BRAF Affinity Prediction. ACS Omega.</em>
+        </a>
     </div>
     {:else}
     <div>

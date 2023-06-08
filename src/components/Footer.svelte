@@ -11,6 +11,7 @@
 <style>
     footer {
         text-align: center;
+        margin-top: 100px;
         padding-bottom: 50px;
         padding-top: 10px;
         background: linear-gradient(180deg, #add7f6 0%, hsla(0, 0%, 97%, 1) 100%)
