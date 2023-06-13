@@ -9,6 +9,7 @@
 	import Contact from "./components/Contact.svelte";
     import Form from "./components/Form.svelte"
     import Result from "./components/Result.svelte";
+    import UploadImage from "./components/UploadImage.svelte";
 
 	function getDataFromHash() {
 		const hash = window.location.hash.slice(1)
@@ -36,6 +37,10 @@
 {:else if route =="success"}
 	<Nav />
 	<Result process_id = {data} />
+	<Footer />
+{:else if route == "spheroiddeath"}
+	<Nav />
+	<UploadImage />
 	<Footer />
 {:else}
 	<Nav />
