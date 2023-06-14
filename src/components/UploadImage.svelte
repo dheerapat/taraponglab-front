@@ -1,20 +1,28 @@
 <script>
     let selectedImage;
     let uploadStatus = "";
+    let result;
 
     async function predict_spheroid() {
         const image = selectedImage[0]
-        console.log(image)
         const formData = new FormData();
         formData.append("file", image);
-        console.log(formData);
 
         try {
             const res = await fetch("/spheroiddeath/", {
                 method: "POST",
                 body: formData
             });
-            console.log(res);
+
+            const resData = await res.json()
+
+            if (resData.status == "complete") {
+                result = resData.result
+                console.log(result)
+            }
+            else {
+                alert("API Call Failed: Please report to admin")
+            }
         } catch (error) {
             uploadStatus = "An error occur while attempting upload image.";
         }
@@ -22,10 +30,18 @@
 </script>
 
 <section>
+    <h1>PCAS-CNN : Spheroid cell death prediction using propidium iodide and calcein AM straining and convolutional neural network</h1>
+    <h4>You can upload spheroid images that have been stained with propidium iodide and calcein AM into this system. Our model will analyze the images and provide predictions for the live and dead cells within your spheroid.</h4>
     <form on:submit|preventDefault={predict_spheroid} enctype="multipart/form-data" method="post">
         <input type="file" accept="image/*" bind:files={selectedImage} />
         <button type="submit">Upload Image</button>
     </form>
+    {#if result}
+    <br>
+    <h1>Result</h1>
+    <h4>Class: {result.class}</h4>
+    <h4>Probability: {result.prob.toPrecision(3)}%</h4>
+    {/if}
 </section>
 
 <style>
