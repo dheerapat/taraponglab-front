@@ -35,12 +35,15 @@
         PCAS-CNN : Spheroid cell death prediction using propidium iodide and
         calcein AM straining and convolutional neural network
     </h1>
-    <h4>
+    <h3>
         You can upload spheroid images that have been stained with propidium
-        iodide and calcein AM into this system. Our model will analyze the
+        iodide and calcein AM into this system. 
+    </h3>
+    <h3>
+        Our model will analyze the
         images and provide predictions for the live and dead cells within your
         spheroid.
-    </h4>
+    </h3>
     <form
         on:submit|preventDefault={predict_spheroid}
         enctype="multipart/form-data"
@@ -68,9 +71,14 @@
         margin-bottom: 100px;
     }
     h1,
+    h3,
     h4,
     form {
         text-align: center;
+    }
+
+    h3 {
+        margin: 0;
     }
 
     img {
