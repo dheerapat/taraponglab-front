@@ -15,7 +15,7 @@
         display: flex;
         padding-top: 50px;
         padding-bottom: 0;
-        margin-top: 50px;
+        margin-top: 0px;
         justify-content: center;
     }
 
