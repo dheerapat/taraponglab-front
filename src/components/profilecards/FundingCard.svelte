@@ -2,7 +2,7 @@
     export let profileurl
     export let profilealt
     export let name
-    export let detail
+    // export let detail
 </script>
 <div class="card">
     <img src="{profileurl}" alt="{profilealt}" width="75%">
