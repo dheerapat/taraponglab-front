@@ -1,46 +1,51 @@
 <script>
-	import Nav from "./components/Nav.svelte"
-	import Footer from "./components/Footer.svelte"
-	import Hero from "./components/Hero.svelte"
-	import About from "./components/About.svelte"
+	import Nav from "./components/Nav.svelte";
+	import Footer from "./components/Footer.svelte";
+	import Hero from "./components/Hero.svelte";
+	import About from "./components/About.svelte";
 	import Researcher from "./components/Researcher.svelte";
 	import Funding from "./components/Funding.svelte";
-    import Publications from "./components/Publications.svelte";
+	import Publications from "./components/Publications.svelte";
 	import Contact from "./components/Contact.svelte";
-    import Form from "./components/Form.svelte"
-    import Result from "./components/Result.svelte";
-    import UploadImage from "./components/UploadImage.svelte";
+	import Form from "./components/Form.svelte";
+	import Result from "./components/Result.svelte";
+	import UploadImage from "./components/UploadImage.svelte";
+    import Model from "./components/Model.svelte";
 
 	function getDataFromHash() {
-		const hash = window.location.hash.slice(1)
-		const [route, data, name] = hash.split('#')
-		return { route, data: data || null }
+		const hash = window.location.hash.slice(1);
+		const [route, data, name] = hash.split("#");
+		return { route, data: data || null };
 	}
 
-	let { route, data } = getDataFromHash()
+	let { route, data } = getDataFromHash();
 
 	function handlehash() {
-		const { route: newRoute, data: newData } = getDataFromHash()
-    	route = newRoute
-    	data = newData
+		const { route: newRoute, data: newData } = getDataFromHash();
+		route = newRoute;
+		data = newData;
 	}
 
-	handlehash()
+	handlehash();
 </script>
 
 <svelte:window on:hashchange={handlehash} />
 
-{#if route == "model"}
+{#if route == "stackbraf"}
 	<Nav />
 	<Form />
 	<Footer />
-{:else if route =="success"}
+{:else if route == "success"}
 	<Nav />
-	<Result process_id = {data} />
+	<Result process_id={data} />
 	<Footer />
 {:else if route == "spheroiddeath"}
 	<Nav />
 	<UploadImage />
+	<Footer />
+{:else if route == "model"}
+	<Nav />
+	<Model />
 	<Footer />
 {:else}
 	<Nav />

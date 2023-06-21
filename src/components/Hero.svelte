@@ -6,7 +6,7 @@
     <div>
         <h1>QSAR Labs</h1>
         <p>Unleash the Power of Advance Machine Learning in the Predictive Drug Bioactivity</p>
-        <a href="#/model" on:click|preventDefault={() => window.location.hash = "model"}>Try Our StackBRAF Model</a>
+        <a href="#/model" on:click|preventDefault={() => window.location.hash = "stackbraf"}>Try Our StackBRAF Model</a>
     </div>
 </section>
 

@@ -20,7 +20,7 @@
     <a class="hidable" href="#funding">Funding</a>
     <a class="hidable" href="#publications">Publications</a>
     <a class="hidable" href="#contact">Contact</a>
-    <a class="box hidable" href="/">Models</a>
+    <a class="box hidable" href="#model">Models</a>
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <div class="can_toggle" on:click={toggle}>
         <div class="toggle" />
@@ -34,7 +34,7 @@
     <a href="#funding">Funding</a>
     <a href="#publications">Publications</a>
     <a href="#contact">Contact</a>
-    <a href="/">Models</a>
+    <a href="#model">Models</a>
 </div>
 
 <style>

@@ -32,8 +32,7 @@
 
 <section>
     <h1>
-        PCAS-CNN : Spheroid cell death prediction using propidium iodide and
-        calcein AM straining and convolutional neural network
+        Classification of Spheroid Cell Death Using Propidium Iodide And Convolutional Neural Networks
     </h1>
     <h3>
         You can upload spheroid images that have been stained with propidium
