@@ -7,10 +7,12 @@
 	import Funding from "./components/Funding.svelte";
 	import Publications from "./components/Publications.svelte";
 	import Contact from "./components/Contact.svelte";
-	import Form from "./components/Form.svelte";
-	import Result from "./components/Result.svelte";
+	import StackBRAF from "./components/StackBRAF.svelte";
+	import StackHacat from "./components/StackHacat.svelte";
 	import UploadImage from "./components/UploadImage.svelte";
-    import Model from "./components/Model.svelte";
+	import Model from "./components/Model.svelte";
+	import ResultStackBraf from "./components/ResultStackBRAF.svelte";
+	import ResultStackHacat from "./components/ResultStackHacat.svelte";
 
 	function getDataFromHash() {
 		const hash = window.location.hash.slice(1);
@@ -33,11 +35,19 @@
 
 {#if route == "stackbraf"}
 	<Nav />
-	<Form />
+	<StackBRAF />
 	<Footer />
-{:else if route == "success"}
+{:else if route == "successStackBRAF"}
 	<Nav />
-	<Result process_id={data} />
+	<ResultStackBraf process_id={data} />
+	<Footer />
+{:else if route == "stackhacat"}
+	<Nav />
+	<StackHacat />
+	<Footer />
+{:else if route == "successStackHacat"}
+	<Nav />
+	<ResultStackHacat process_id={data} />
 	<Footer />
 {:else if route == "spheroiddeath"}
 	<Nav />

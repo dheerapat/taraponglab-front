@@ -21,7 +21,7 @@
         
         if (res.ok) {
             console.log(processID)
-            window.location.hash = `success#${processID}#${name}`
+            window.location.hash = `successStackBRAF#${processID}#${name}`
         } else {
             alert("API Call Failed: Please report to admin")
         }
