@@ -16,14 +16,15 @@
 
         if (data.status == "complete") {
             jsonData = JSON.parse(data.result)
+            console.log(jsonData)
             key = Object.keys(jsonData)[0]
 
             let Key = jsonData[key]
 
             pred = Key["Skin Irritation Prediction"]
             outlier = Key["Compound Outlier"]
-            sim_train = Key["Similarity to training set"].toPrecision(3)
-            sim_test = Key["Similarity to test set"].toPrecision(3)
+            sim_train = Key["Similarity to training set"] * 100
+            sim_test = Key["Similarity to test set"] * 100
         } else if (data.status == "processing") {
             setTimeout(get_result,2000)
         }
@@ -41,8 +42,8 @@
         <h3>Ligand: {key}</h3>
         <h3>Skin Irritation Prediction: {pred}</h3>
         <h3>Outlier: {outlier}</h3>
-        <h3>Similarity to training set: {sim_train * 100} %</h3>
-        <h3>Similarity to test set: {sim_test * 100} %</h3>
+        <h3>Similarity to training set: {sim_train.toFixed(1)} %</h3>
+        <h3>Similarity to test set: {sim_test.toFixed(1)} %</h3>
     </div>
     {:else}
     <div>

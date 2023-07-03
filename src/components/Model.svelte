@@ -16,6 +16,13 @@
             journal: "",
             authors: "",
         },
+        {
+            link: "#stackhacat",
+            title: "Stacked Ensemble Learning on HaCaT Cytotoxicity for Skin Irritation Prediction",
+            year: 2023,
+            journal: "",
+            authors: "",
+        }
     ];
 </script>
 
