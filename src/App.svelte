@@ -13,6 +13,9 @@
 	import Model from "./components/Model.svelte";
 	import ResultStackBraf from "./components/ResultStackBRAF.svelte";
 	import ResultStackHacat from "./components/ResultStackHacat.svelte";
+	import PocketBase from 'pocketbase';
+    import Login from "./components/Login.Svelte";
+    import Register from "./components/Register.svelte";
 
 	function getDataFromHash() {
 		const hash = window.location.hash.slice(1);
@@ -56,6 +59,14 @@
 {:else if route == "model"}
 	<Nav />
 	<Model />
+	<Footer />
+{:else if route == "login"}
+	<Nav />
+	<Login />
+	<Footer />
+{:else if route == "register"}
+	<Nav />
+	<Register />
 	<Footer />
 {:else}
 	<Nav />
