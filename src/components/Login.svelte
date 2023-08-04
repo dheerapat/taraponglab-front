@@ -11,6 +11,7 @@
                 .collection("users")
                 .authWithPassword(email, pass);
             console.log(authData);
+            window.location.hash = '';
         } catch (error) {
             console.log(error);
         }

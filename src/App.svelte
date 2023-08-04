@@ -14,8 +14,11 @@
 	import ResultStackBraf from "./components/ResultStackBRAF.svelte";
 	import ResultStackHacat from "./components/ResultStackHacat.svelte";
 	import PocketBase from 'pocketbase';
-    import Login from "./components/Login.Svelte";
+	import Login from "./components/Login.svelte";
     import Register from "./components/Register.svelte";
+    import { onMount } from "svelte";
+
+	const pb = new PocketBase('http://127.0.0.1:8090');
 
 	function getDataFromHash() {
 		const hash = window.location.hash.slice(1);
@@ -31,6 +34,15 @@
 		data = newData;
 	}
 
+	let isAuthValid = false;
+
+	onMount(() => {
+		if (pb.authStore.isValid) {
+			isAuthValid = true
+		}
+		console.log(isAuthValid)
+	})
+
 	handlehash();
 </script>
 
@@ -38,7 +50,7 @@
 
 {#if route == "stackbraf"}
 	<Nav />
-	<StackBRAF />
+	<StackBRAF auth = {isAuthValid} />
 	<Footer />
 {:else if route == "successStackBRAF"}
 	<Nav />
@@ -46,7 +58,7 @@
 	<Footer />
 {:else if route == "stackhacat"}
 	<Nav />
-	<StackHacat />
+	<StackHacat auth = {isAuthValid} />
 	<Footer />
 {:else if route == "successStackHacat"}
 	<Nav />
@@ -54,7 +66,7 @@
 	<Footer />
 {:else if route == "spheroiddeath"}
 	<Nav />
-	<UploadImage />
+	<UploadImage auth = {isAuthValid} />
 	<Footer />
 {:else if route == "model"}
 	<Nav />

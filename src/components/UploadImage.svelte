@@ -1,4 +1,7 @@
 <script>
+    import { onMount } from "svelte";
+
+    export let auth
     let selectedImage;
     let uploadStatus = "";
     let result;
@@ -28,20 +31,26 @@
             uploadStatus = "An error occur while attempting upload image.";
         }
     }
+
+    onMount(() => {
+        if (auth == false) {
+            window.location.hash = 'login'
+        }
+    });
 </script>
 
 <section>
     <h1>
-        Classification of Spheroid Cell Death Using Propidium Iodide And Convolutional Neural Networks
+        Classification of Spheroid Cell Death Using Propidium Iodide And
+        Convolutional Neural Networks
     </h1>
     <h3>
         You can upload spheroid images that have been stained with propidium
-        iodide and calcein AM into this system. 
+        iodide and calcein AM into this system.
     </h3>
     <h3>
-        Our model will analyze the
-        images and provide predictions for the live and dead cells within your
-        spheroid.
+        Our model will analyze the images and provide predictions for the live
+        and dead cells within your spheroid.
     </h3>
     <form
         on:submit|preventDefault={predict_spheroid}
