@@ -19,11 +19,41 @@
 </script>
 
 <section>
+    <h1>Please login before using our model.</h1>
     <div>
         <form on:submit|preventDefault={login}>
-            <input type="email" placeholder="E-mail" bind:value={email} />
-            <input type="password" placeholder="Password" bind:value={pass} />
+            <label for="email">E-mail</label>
+            <input id="email" name="email" placeholder="E-mail" bind:value={email} /><br>
+            <label for="password">Password</label>
+            <input id="password" name="password" placeholder="Password" bind:value={pass} /><br>
             <input type="submit" value="Login" />
         </form>
     </div>
+    <h4>Not a member? Click <a href="#register">here</a> to register.</h4>
+    
 </section>
+
+<style>
+    section {
+        background-color: white;
+        font-size: 30px;
+        padding: 50px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    h1,
+    h4,
+    form {
+        text-align: center;
+    }
+    form {
+        margin-top: 100px;
+    }
+
+    @media (max-width: 1200px) {
+        section {
+            font-size: medium;
+            margin-top: 25px;
+        }
+    }
+</style>

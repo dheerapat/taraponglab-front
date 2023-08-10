@@ -15,6 +15,7 @@
         try {
             const record = await pb.collection('users').create(data);
             console.log(record);
+            window.location.hash = 'login';
         } catch (error) {
             console.log(error);
         }
@@ -22,14 +23,45 @@
 </script>
 
 <section>
+    <h1>Register</h1>
     <div>
         <form on:submit|preventDefault={register}>
-            <input type="text" placeholder="Username" bind:value={data.username} />
-            <input type="text" placeholder="Fullname" bind:value={data.name} />
-            <input type="email" placeholder="E-mail" bind:value={data.email} />
-            <input type="password" placeholder="Password" bind:value={data.password} />
-            <input type="password" placeholder="Confirmed Password" bind:value={data.passwordConfirm} />
-            <input type="submit" value="Login" />
+            <label for="username">Username</label>
+            <input id="username" placeholder="Username" bind:value={data.username} /><br>
+            <label for="fullname">Fullname</label>
+            <input id="fullname" placeholder="Fullname" bind:value={data.name} /><br>
+            <label for="email">E-mail</label>
+            <input id="email" placeholder="E-mail" bind:value={data.email} /><br>
+            <label for="password">Password</label>
+            <input id="password" placeholder="Password" bind:value={data.password} /><br>
+            <label for="confirmpassword">Confirm Password</label>
+            <input id="confirmpassword" placeholder="Confirmed Password" bind:value={data.passwordConfirm} /><br>
+            <input type="submit" value="Register" />
         </form>
     </div>
 </section>
+
+<style>
+    section {
+        background-color: white;
+        font-size: 30px;
+        padding: 50px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    h1,
+    h4,
+    form {
+        text-align: center;
+    }
+    form {
+        margin-top: 100px;
+    }
+
+    @media (max-width: 1200px) {
+        section {
+            font-size: medium;
+            margin-top: 25px;
+        }
+    }
+</style>
