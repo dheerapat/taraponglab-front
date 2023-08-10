@@ -9,13 +9,15 @@
         password: "",
         passwordConfirm: "",
         name: "",
+        surname: "",
+        institute: "",
     };
 
     async function register() {
         try {
-            const record = await pb.collection('users').create(data);
+            const record = await pb.collection("users").create(data);
             console.log(record);
-            window.location.hash = 'login';
+            window.location.hash = "login";
         } catch (error) {
             console.log(error);
         }
@@ -27,15 +29,42 @@
     <div>
         <form on:submit|preventDefault={register}>
             <label for="username">Username</label>
-            <input id="username" placeholder="Username" bind:value={data.username} /><br>
-            <label for="fullname">Fullname</label>
-            <input id="fullname" placeholder="Fullname" bind:value={data.name} /><br>
+            <input
+                id="username"
+                placeholder="Username"
+                bind:value={data.username}
+            /><br />
+            <label for="name">Name</label>
+            <input id="name" placeholder="Name" bind:value={data.name} /><br />
+            <label for="surname">Surname</label>
+            <input
+                id="surname"
+                placeholder="Surname"
+                bind:value={data.surname}
+            /><br />
+            <label for="institute">Institute</label>
+            <input
+                id="institute"
+                placeholder="Institute"
+                bind:value={data.institute}
+            /><br />
             <label for="email">E-mail</label>
-            <input id="email" placeholder="E-mail" bind:value={data.email} /><br>
+            <input id="email" placeholder="E-mail" bind:value={data.email} /><br
+            />
             <label for="password">Password</label>
-            <input id="password" placeholder="Password" bind:value={data.password} /><br>
+            <input
+                id="password"
+                placeholder="Password"
+                type="password"
+                bind:value={data.password}
+            /><br />
             <label for="confirmpassword">Confirm Password</label>
-            <input id="confirmpassword" placeholder="Confirmed Password" bind:value={data.passwordConfirm} /><br>
+            <input
+                id="confirmpassword"
+                placeholder="Confirmed Password"
+                type="password"
+                bind:value={data.passwordConfirm}
+            /><br />
             <input type="submit" value="Register" />
         </form>
     </div>

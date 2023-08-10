@@ -25,7 +25,7 @@
             <label for="email">E-mail</label>
             <input id="email" name="email" placeholder="E-mail" bind:value={email} /><br>
             <label for="password">Password</label>
-            <input id="password" name="password" placeholder="Password" bind:value={pass} /><br>
+            <input id="password" name="password" placeholder="Password" type="password" bind:value={pass} /><br>
             <input type="submit" value="Login" />
         </form>
     </div>
