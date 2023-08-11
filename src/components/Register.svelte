@@ -1,6 +1,6 @@
 <script>
     import PocketBase from "pocketbase";
-    const pb = new PocketBase("https://143.42.64.66");
+    const pb = new PocketBase("https://pb.qsarlabs.com");
 
     let data = {
         username: "",
