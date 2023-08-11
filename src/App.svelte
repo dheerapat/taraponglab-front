@@ -18,7 +18,7 @@
     import Register from "./components/Register.svelte";
     import { onMount } from "svelte";
 
-	const pb = new PocketBase('http://143.42.64.66:80');
+	const pb = new PocketBase('https://143.42.64.66');
 
 	function getDataFromHash() {
 		const hash = window.location.hash.slice(1);
