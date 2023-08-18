@@ -13,12 +13,12 @@
 	import Model from "./components/Model.svelte";
 	import ResultStackBraf from "./components/ResultStackBRAF.svelte";
 	import ResultStackHacat from "./components/ResultStackHacat.svelte";
-	import PocketBase from 'pocketbase';
+	import PocketBase from "pocketbase";
 	import Login from "./components/Login.svelte";
-    import Register from "./components/Register.svelte";
-    import { onMount } from "svelte";
+	import Register from "./components/Register.svelte";
+	import { onMount } from "svelte";
 
-	const pb = new PocketBase('https://pb.qsarlabs.com');
+	const pb = new PocketBase("https://pb.qsarlabs.com");
 
 	function getDataFromHash() {
 		const hash = window.location.hash.slice(1);
@@ -36,21 +36,29 @@
 
 	let isAuthValid = false;
 
-	onMount(() => {
+	const checkAuthValidity = () => {
 		if (pb.authStore.isValid) {
-			isAuthValid = true
+			isAuthValid = true;
 		}
-		console.log(isAuthValid)
-	})
+		// console.log(isAuthValid);
+	};
 
-	handlehash();
+	const handlehashChange = () => {
+		handlehash();
+		checkAuthValidity();
+	}
+
+	onMount(() => {
+		handlehashChange();
+		// console.log(isAuthValid);
+	});
 </script>
 
-<svelte:window on:hashchange={handlehash} />
+<svelte:window on:hashchange={handlehashChange} />
 
 {#if route == "stackbraf"}
 	<Nav />
-	<StackBRAF auth = {isAuthValid} />
+	<StackBRAF auth={isAuthValid} />
 	<Footer />
 {:else if route == "successStackBRAF"}
 	<Nav />
@@ -58,7 +66,7 @@
 	<Footer />
 {:else if route == "stackhacat"}
 	<Nav />
-	<StackHacat auth = {isAuthValid} />
+	<StackHacat auth={isAuthValid} />
 	<Footer />
 {:else if route == "successStackHacat"}
 	<Nav />
@@ -66,7 +74,7 @@
 	<Footer />
 {:else if route == "spheroiddeath"}
 	<Nav />
-	<UploadImage auth = {isAuthValid} />
+	<UploadImage auth={isAuthValid} />
 	<Footer />
 {:else if route == "model"}
 	<Nav />

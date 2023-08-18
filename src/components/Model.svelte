@@ -22,6 +22,13 @@
             year: 2023,
             journal: "",
             authors: "",
+        },
+        {
+            link: "https://github.com/taraponglab/enraqsar-skinirritation",
+            title: "Ensemble Read-Across Quantitative Structure-Activity Relationship Algorithm for Predicting Skin Irritation Toxicity",
+            year: 2023,
+            journal: "",
+            authors: "",
         }
     ];
 </script>

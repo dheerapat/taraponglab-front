@@ -16,7 +16,7 @@
     async function register() {
         try {
             const record = await pb.collection("users").create(data);
-            console.log(record);
+            // console.log(record);
             window.location.hash = "login";
         } catch (error) {
             console.log(error);
