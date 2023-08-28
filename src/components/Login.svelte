@@ -29,7 +29,7 @@
             <input type="submit" value="Login" />
         </form>
     </div>
-    <h4>Not a member? Click <a href="#register">here</a> to register.</h4>
+    <h4>Don't have an ancount? Click <a href="#register">here</a> to register.</h4>
     
 </section>
 

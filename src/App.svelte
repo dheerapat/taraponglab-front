@@ -74,7 +74,7 @@
 	<Footer />
 {:else if route == "spheroiddeath"}
 	<Nav />
-	<UploadImage auth={isAuthValid} />
+	<UploadImage />
 	<Footer />
 {:else if route == "model"}
 	<Nav />
