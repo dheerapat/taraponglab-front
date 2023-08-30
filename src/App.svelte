@@ -10,6 +10,7 @@
 	import StackBRAF from "./components/StackBRAF.svelte";
 	import StackHacat from "./components/StackHacat.svelte";
 	import UploadImage from "./components/UploadImage.svelte";
+	import VitaminC from "./components/VitaminC.svelte";
 	import Model from "./components/Model.svelte";
 	import ResultStackBraf from "./components/ResultStackBRAF.svelte";
 	import ResultStackHacat from "./components/ResultStackHacat.svelte";
@@ -75,6 +76,10 @@
 {:else if route == "spheroiddeath"}
 	<Nav />
 	<UploadImage />
+	<Footer />
+{:else if route == "vitaminc"}
+	<Nav />
+	<VitaminC />
 	<Footer />
 {:else if route == "model"}
 	<Nav />
