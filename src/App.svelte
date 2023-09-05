@@ -67,7 +67,7 @@
 	<Footer />
 {:else if route == "stackhacat"}
 	<Nav />
-	<StackHacat auth={isAuthValid} />
+	<StackHacat />
 	<Footer />
 {:else if route == "successStackHacat"}
 	<Nav />

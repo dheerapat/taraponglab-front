@@ -1,7 +1,7 @@
 <script>
     import { onMount } from "svelte";
 
-    export let auth;
+    // export let auth;
     let name;
     let smiles;
 
@@ -29,11 +29,11 @@
         }
     }
 
-    onMount(() => {
-        if (auth == false) {
-            window.location.hash = "login";
-        }
-    });
+    // onMount(() => {
+    //     if (auth == false) {
+    //         window.location.hash = "login";
+    //     }
+    // });
 </script>
 
 <section>
