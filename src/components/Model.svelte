@@ -36,6 +36,13 @@
             year: 2023,
             journal: "",
             authors: "",
+        },
+        {
+            link: "#braf",
+            title: "Exploring Quantitative Structure Activity Relationship of Pyrimidine-Sulfonamide Analogues for BRAF V600E Targeting",
+            year: 2023,
+            journal: "",
+            authors: "",
         }
     ];
 </script>

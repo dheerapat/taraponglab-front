@@ -18,6 +18,8 @@
 	import Login from "./components/Login.svelte";
 	import Register from "./components/Register.svelte";
 	import { onMount } from "svelte";
+	import Braf from "./components/Braf.svelte";
+    import ResultBraf from "./components/ResultBraf.svelte";
 
 	const pb = new PocketBase("https://pb.qsarlabs.com");
 
@@ -47,7 +49,7 @@
 	const handlehashChange = () => {
 		handlehash();
 		checkAuthValidity();
-	}
+	};
 
 	onMount(() => {
 		handlehashChange();
@@ -80,6 +82,14 @@
 {:else if route == "vitaminc"}
 	<Nav />
 	<VitaminC />
+	<Footer />
+{:else if route == "braf"}
+	<Nav />
+	<Braf />
+	<Footer />
+{:else if route == "successBRAF"}
+	<Nav />
+	<ResultBraf process_id={data} />
 	<Footer />
 {:else if route == "model"}
 	<Nav />
