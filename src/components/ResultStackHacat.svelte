@@ -44,6 +44,11 @@
         <h3>Outlier: {outlier}</h3>
         <h3>Similarity to training set: {sim_train.toFixed(1)} %</h3>
         <h3>Similarity to test set: {sim_test.toFixed(1)} %</h3>
+        <br>
+        <h3>If you think this service is helpful please cite: </h3>
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0278691523005173?via%3Dihub">
+            <em>Tarapong Srisongkram, Nur Fadhilah Syahid, Dheerapat Tookkane, Natthida Weerapreeyakul, Ploenthip Puthongking, Stacked Ensemble Learning on HaCaT Cytotoxicity for Skin Irritation Prediction: A Case Study on Dipterocarpol. Food and Chemical Toxicology, 181, 2023, 114115.</em>
+        </a>
     </div>
     {:else}
     <div>
