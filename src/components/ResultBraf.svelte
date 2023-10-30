@@ -37,8 +37,8 @@
     <div>
         <h1>Result</h1>
         <h3>Ligand: {key}</h3>
-        <h3>pIC50: {pIC50}</h3>
-        <h3>IC50: {IC50}</h3>
+        <h3>pIC50: {pIC50} M</h3>
+        <h3>IC50: {IC50} nM</h3>
         <h3>Activity Domain: {AD_status}</h3>
         <br>
     </div>
