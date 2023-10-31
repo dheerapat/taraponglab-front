@@ -19,8 +19,8 @@
 
             let Key = jsonData[key]
 
-            pIC50 = Key.pIC50.toPrecision(3)
-            IC50 = Key.IC50.toPrecision(3)
+            pIC50 = Key["pIC50 (M)"].toPrecision(3)
+            IC50 = Key["IC50 (nM)"].toPrecision(3)
             AD_status = Key.AD_status
         } else if (data.status == "processing") {
             setTimeout(get_result,2000)
