@@ -1,5 +1,11 @@
 [
 	{
+		"authors": "Srisongkram, T., Syahid, N. F., Tookkane, D., Weerapreeyakul, N., & Puthongking, P.",
+		"year": 2023,
+		"title": "Stacked ensemble learning on HaCaT cytotoxicity for skin irritation prediction: A case study on dipterocarpol",
+		"journal": "Food and Chemical Toxicology"
+	},
+	{
 		"authors": "Syahid, N. F., Weerapreeyakul, N., & Srisongkram, T.",
 		"year": 2023,
 		"title": "StackBRAF: A Large-Scale Stacking Ensemble Learning for BRAF Affinity Prediction.",
