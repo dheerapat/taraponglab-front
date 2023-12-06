@@ -1,5 +1,17 @@
 [
 	{
+		"authors": "STarapong Srisongkram, Nur Fadhilah Syahid, Thanawat Piyasawetkul, Pannaphat Thirawatthanasak, Patcharapa Khamtang, Nathida Sawasnopparat, Dheerapat Tookkane, Natthida Weerapreeyakul, and Ploenthip Puthongking",
+		"year": 2023,
+		"title": "Prediction of Spheroid Cell Death Using Fluorescence Staining and Convolutional Neural Networks",
+		"journal": "Food and Chemical Toxicology"
+	},
+	{
+		"authors": "Srisongkram, T.",
+		"year": 2023,
+		"title": "Ensemble Quantitative Read-Across Structure–Activity Relationship Algorithm for Predicting Skin Cytotoxicity",
+		"journal": "Chemical Research in Toxicology"
+	},
+	{
 		"authors": "Srisongkram, T., Syahid, N. F., Tookkane, D., Weerapreeyakul, N., & Puthongking, P.",
 		"year": 2023,
 		"title": "Stacked ensemble learning on HaCaT cytotoxicity for skin irritation prediction: A case study on dipterocarpol",
