@@ -67,6 +67,11 @@
         <img src={imageURL} alt="Uploaded Image" />
         <h4>Class: {result.class}</h4>
         <h4>Probability: {result.prob.toPrecision(3)}%</h4>
+        <br>
+        <h3>If you think this service is helpful please cite: </h3>
+        <a href="https://pubs.acs.org/doi/10.1021/acs.chemrestox.3c00257?fbclid=IwAR2wcnI-fbeEg9MhbYxgO1BHSlat_y-NLKxTe3CDsJyB9DzO5ET__OGJMwo">
+            <p>Srisongkram T., Syahid, N. F., Piyasawetkul T., Thirawatthanasak P., Khamtang P., Sawasnopparat N., Tookkane D., Weerapreeyakul N., and Puthongking P. <b>Prediction of Spheroid Cell Death Using Fluorescence Staining and Convolutional Neural Networks,</b> Chemical Research in Toxicology, 2023</p>
+        </a>
     {/if}
 </section>
 
