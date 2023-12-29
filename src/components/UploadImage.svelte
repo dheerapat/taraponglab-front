@@ -41,8 +41,7 @@
 
 <section>
     <h1>
-        Classification of Spheroid Cell Death Using Propidium Iodide And
-        Convolutional Neural Networks
+        Prediction of Spheroid Cell Death Using Fluorescence Staining and Convolutional Neural Networks
     </h1>
     <h3>
         You can upload spheroid images that have been stained with propidium
