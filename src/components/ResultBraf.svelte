@@ -41,6 +41,10 @@
         <h3>IC50: {IC50} nM</h3>
         <h3>Activity Domain: {AD_status}</h3>
         <br>
+        <h3>If you think this service is helpful please cite: </h3>
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0301462224000085">
+            <em>Srisongkram T, Tookkane D. Insights into the structure-activity relationship of pyrimidine-sulfonamide analogues for targeting BRAF V600E protein. Biophysical Chemistry. 2024 Jan 12:107179.</em>
+        </a>
     </div>
     {:else}
     <div>
