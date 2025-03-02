@@ -16,13 +16,13 @@
             journal: "",
             authors: "",
         },
-        {
-            link: "#vitaminc",
-            title: "Prediction of drug stability using stacked ensemble convolutional neural network and smartphone: a case study of ascorbic acid tablets",
-            year: 2023,
-            journal: "",
-            authors: "",
-        },
+        // {
+        //     link: "#vitaminc",
+        //     title: "Prediction of drug stability using stacked ensemble convolutional neural network and smartphone: a case study of ascorbic acid tablets",
+        //     year: 2023,
+        //     journal: "",
+        //     authors: "",
+        // },
         {
             link: "#stackhacat",
             title: "Stacked Ensemble Learning on HaCaT Cytotoxicity for Skin Irritation Prediction",
