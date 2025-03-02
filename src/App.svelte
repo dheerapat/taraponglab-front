@@ -14,14 +14,14 @@
 	import Model from "./components/Model.svelte";
 	import ResultStackBraf from "./components/ResultStackBRAF.svelte";
 	import ResultStackHacat from "./components/ResultStackHacat.svelte";
-	import PocketBase from "pocketbase";
+	// import PocketBase from "pocketbase";
 	import Login from "./components/Login.svelte";
 	import Register from "./components/Register.svelte";
 	import { onMount } from "svelte";
 	import Braf from "./components/Braf.svelte";
     import ResultBraf from "./components/ResultBraf.svelte";
 
-	const pb = new PocketBase("https://pb.qsarlabs.com");
+	// const pb = new PocketBase("https://pb.qsarlabs.com");
 
 	function getDataFromHash() {
 		const hash = window.location.hash.slice(1);
@@ -37,18 +37,18 @@
 		data = newData;
 	}
 
-	let isAuthValid = false;
+	let isAuthValid = true;
 
-	const checkAuthValidity = () => {
-		if (pb.authStore.isValid) {
-			isAuthValid = true;
-		}
-		// console.log(isAuthValid);
-	};
+	// const checkAuthValidity = () => {
+	// 	if (pb.authStore.isValid) {
+	// 		isAuthValid = true;
+	// 	}
+	// 	// console.log(isAuthValid);
+	// };
 
 	const handlehashChange = () => {
 		handlehash();
-		checkAuthValidity();
+		// checkAuthValidity();
 	};
 
 	onMount(() => {
