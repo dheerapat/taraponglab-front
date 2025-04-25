@@ -1,5 +1,53 @@
 [
 	{
+		"authors": "Duy, H. A., & Srisongkram, T. ",
+		"year": 2025,
+		"title": "Protecting your skin: a highly accurate LSTM network integrating conjoint features for predicting chemical-induced skin irritation",
+		"journal": "Journal of Cheminformatics"
+	},
+	{
+		"authors": "Duy, H. A., & Srisongkram, T. ",
+		"year": 2025,
+		"title": "Bidirectional Long Short-Term Memory (BiLSTM) Neural Networks with Conjoint Fingerprints: Application in Predicting Skin-Sensitizing Agents in Natural Compounds",
+		"journal": "Journal of Chemical Information and Modeling"
+	},
+	{
+		"authors": "Duy, H. A., & Srisongkram, T. ",
+		"year": 2025,
+		"title": "Comparative Analysis of Recurrent Neural Networks with Conjoint Fingerprints for Skin Corrosion Prediction",
+		"journal": "Journal of Chemical Information and Modeling"
+	},
+	{
+		"authors": "Boonsom, S., Chamnansil, P., Boonseng, S., & Srisongkram, T. ",
+		"year": 2025,
+		"title": "ToxSTK: A multi-target toxicity assessment utilizing molecular structure and stacking ensemble learning",
+		"journal": "Computers in Biology and Medicine"
+	},
+	{
+		"authors": "Kaimuangpak, K., Srisongkram, T., Lehtonen, M., Rautio, J., & Weerapreeyakul, N.",
+		"year": 2024,
+		"title": "The metabolic response of HepG2 cells to extracellular vesicles derived from Raphanus sativus L. var. caudatus Alef microgreens probed by chemometrics-assisted LC-MS/MS analysis",
+		"journal": "Food Chemistry"
+	},
+	{
+		"authors": "Rosalina, R., Kamwilaisak, K., Sutthanut, K., Srisongkram, T., & Weerapreeyakul, N.",
+		"year": 2024,
+		"title": "Probing the stability and quality of the cellulose-based Pickering emulsion containing sesamolin-enriched sesame oil by chemometrics-assisted ATR-FTIR spectroscopy",
+		"journal": "Food Chemistry"
+	},
+	{
+		"authors": "Srisongkram, T. ",
+		"year": 2024,
+		"title": "DeepRA: A novel deep learning-read-across framework and its application in non-sugar sweeteners mutagenicity prediction",
+		"journal": "Computers in Biology and Medicine"
+	},
+	{
+		"authors": "Pocasap, P., Tamprasit, K., Rungsri, T., Kaimuangpak, K., Srisongkram, T., Katekaew, S., Kamwilaisak, K., Puthongking, P., & Weerapreeyakul, N.",
+		"year": 2024,
+		"title": "Pickering Emulsion of Oleoresin from Dipterocarpus alatus Roxb. Ex G. Don and Its Antiproliferation in Colon (HCT116) and Liver (HepG2) Cancer Cells",
+		"journal": "Molecules"
+	},
+	{
 		"authors": "Srisongkram T, Tookkane D.",
 		"year": 2024,
 		"title": "Insights into the structure-activity relationship of pyrimidine-sulfonamide analogues for targeting BRAF V600E protein",
@@ -101,5 +149,4 @@
 		"title": "Validation of Cell-Based Assay for Quantification of Sesamol Uptake and Its Application for Measuring Target Exposure.",
 		"journal": "Molecules. 2019; 24(19):3522."
 	}
-
 ]
